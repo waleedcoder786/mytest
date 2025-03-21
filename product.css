@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  background-color: lightslategray;
+}
+
+nav {
+  width: 100%;
+  height: 10%;
+  position: fixed;
+  z-index: 11;
+  top: 0px;
+  background-color: #151516;
+}
+.detail {
+  width: 100%;
+  height: 90%;
+  position: fixed;
+  z-index: 11111;
+  top: 65px;
+  display: none;
+  background-color: white;
+  transition: 0.4s ease;
+}
+.close_details {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  font-size: 25px;
+  right: 70px;
+  top: 45px;
+  z-index: 11;
+  position: absolute;
+  border-radius: 50%;
+  color: #151516;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 10px #000;
+}
+.dettail-pic {
+  width: 90%;
+  height: 90%;
+  margin-left: 5%;
+  margin-top: 3%;
+  padding: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: wheat; */
+  box-shadow: 1px 1px 10px #000;
+}
+.div {
+  width: 35%;
+  height: 75%;
+  margin-top: -6%;
+  display: inline-block;
+  background-size: 200%;
+  background-position: 50% 50%;
+}
+.imgs {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  overflow: hidden;
+  /* background-color: orange; */
+}
+.imgs img {
+  width: 25%;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid #000;
+}
+.div img:hover {
+  opacity: 0;
+  cursor: zoom-in;
+}
+.div img {
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s;
+}
+.info {
+  width: 60%;
+  height: 96%;
+  margin-top: 1%;
+  margin-left: 1%;
+  position: relative;
+  padding: 50px 20px;
+  border-left: 1px solid #ddd;
+  /* background-color: forestgreen; */
+}
+.pics {
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+.pics:hover {
+  transform: scale(1.1);
+}
+#name1,
+.rating,
+.rate {
+  margin: 5px 20px;
+  font-size: 25px;
+}
+.rate {
+  color: red;
+  font-size: 29px;
+}
+.info-side {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-color: #fff;
+}
+
+.panel {
+  width: 100%;
+  height: 94%;
+  border-left: 1px solid #ddd;
+  padding: 50px 20px;
+  /* margin: 10px; */
+  font-family: sans-serif;
+}
+
+hr {
+  margin: 5%;
+}
+#btn {
+  float: right;
+  border: 1px solid #07f;
+  color: #07f;
+  background: none;
+  padding: 2px 10px;
+}
+
+span {
+  color: red;
+}
+
+.heading {
+  margin-top: 1%;
+  font-size: 30px;
+  margin-left: 2%;
+  color: white;
+  text-transform: uppercase;
+}
+.icon {
+  width: 90px;
+  height: 45px;
+  position: absolute;
+  right: 28px;
+  top: 10px;
+  color: #000;
+  font-size: 35px;
+  background-color: white;
+}
+.icon i {
+  margin-top: 5%;
+  margin-left: 3%;
+  color: #151516;
+}
+.count {
+  width: 20px;
+  height: 20px;
+  color: white;
+  display: flex;
+  font-size: 15px;
+  background: #151516;
+  border-radius: 50%;
+  margin-left: 60%;
+  margin-top: -30%;
+  z-index: 11;
+  align-items: center;
+  justify-content: center;
+}
+.list {
+  width: 100%;
+  height: 86%;
+  gap: 10px;
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #fff; */
+  background-color: white;
+}
+.card {
+  width: 28%;
+  height: 50%;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+  margin-bottom: 3%;
+  cursor: pointer;
+  transition: .1s ease;
+  background-color: white;
+  box-shadow: 1px 1px 5px #000;
+}
+.card:hover {
+  box-shadow: 1px 1px 20px #000;
+}
+.pic {
+  width: 100%;
+  height: 90%;
+}
+.pic img {
+  width: 100%;
+  height: 100%;
+  /* filter: drop-shadow(1px 1px 10px #000); */
+}
+.name,
+.price {
+  font-size: 20px;
+  margin: 5px;
+}
+.price {
+  font-weight: 600;
+  color: red;
+}
+.buything {
+  width: 90%;
+  padding: 10px 20px;
+  border-radius: 1000px;
+  border: none;
+  color: white;
+  transition: 0.3s ease;
+  font-size: 18px;
+  margin-bottom: 5%;
+  box-shadow: 1px 1px 5px black;
+  background-color: #151516;
+}
+.buything1 {
+  width: 30%;
+  margin-top: 5%;
+}
+.buything:active {
+  color: white;
+  background-color: #4d4d57;
+}
+.buy-list {
+  width: 40%;
+  height: 88%;
+  left: 100%;
+  top: 10%;
+  padding: 20px;
+  position: fixed;
+  z-index: 1111111;
+  border-radius: 6px;
+  transition: 0.4s ease;
+  border-top: 1px solid #fff;
+  background-color: gainsboro;
+  box-shadow: 3px 3px 10px 2px black;
+}
+.buy-list p {
+  height: 10%;
+  color: white;
+  margin-bottom: 2%;
+  font-size: 30px;
+  padding: 1px 30px;
+  background-color: #151516;
+}
+.inner-list {
+  width: 100%;
+  height: 80%;
+  overflow-y: auto;
+}
+.span {
+  font-size: 25px;
+}
+.open {
+  left: 60%;
+}
+.items {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  display: flex;
+  padding: 5px;
+  margin: 10px 0px;
+  align-items: center;
+  box-shadow: 1px 1px 5px #000;
+  justify-content: space-between;
+}
+.img {
+  width: 15%;
+  height: 90%;
+  margin-left: 1px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #151516;
+  /* background-color: gainsboro; */
+}
+.img img {
+  width: 100%;
+  height: 100%;
+}
+.name1 {
+  margin: 0px 20px;
+  font-size: 25px;
+}
+.rs {
+  font-size: 24px;
+  color: red;
+}
+.p {
+  margin-left: 2%;
+}
+.quantity {
+  width: 38%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.quantity1 {
+  width: 22%;
+  height: 20%;
+  display: flex;
+  padding: 20px;
+  /* margin-top: 2%; */
+  align-items: center;
+  /* border: 1px solid #000; */
+  justify-content: space-between;
+  /* background: rebeccapurple; */
+}
+.quantity span {
+  font-size: 24px;
+}
+.quantity button,.quantity1 button {
+  width: 35px;
+  height: 34px;
+  border: none;
+  font-size: 17px;
+  color: white;
+  border-radius: 50%;
+  background-color: #151516;
+}
+.last {
+  height: 12%;
+  margin-bottom: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gainsboro;
+}
+.close,
+.total {
+  width: 50%;
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #151516;
+  font-size: 25px;
+  margin-bottom: 2%;
+}
+.close:active {
+  color: #000;
+  background-color: white;
+}
